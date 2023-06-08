@@ -1,0 +1,17 @@
+shit i gota do
+- Add stats to the CSVs
+- Implement the rings
+- Implement the combat
+- Add saving
+- Starting gear (up next)
+- Using items in battle
+- Boss list
+- Rebalance the monster lists
+- More mythical items
+- Improve modularity and expandibilty
+- Shopping logic for swords and armor
+- Make the code for swords and armor not nested as hell
+- Move the exposition shit into a TXT       (after the up next thing)
+- Fix save and exit to main menu
+- Add locked status and dmg to the shop
+- Finish up the shop ie define how we want items to work and what the CSVs should look like

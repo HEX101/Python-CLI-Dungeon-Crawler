@@ -1,0 +1,10 @@
+Item,Description,Comment
+Ring of Strength,Enhances the wearer's physical strength., increased dmg
+Ring of Regeneration,Gradually restores the wearer's health over time., Heal over time
+Ring of Life Stealing,Grants the ability to drain the life force from enemies., Heal based on how much dmg u do
+Ring of Teleportation,Allows the wearer to teleport., Teleport to the nearest muiltiple of 10 room the user has defeated
+Ring of Fortune,Brings luck to the wearer., More gold and treasure rooms
+Ring of Second Chances, Allows the wearer to continue fighting after death., After death have a random number of turns to kill the monster that they are fighting and live
+Ring of Quickening,Boosts the wearer's reaction time, allowing them to dodge attacks and return with deadly blows., Dodge attack chance and reuturn with double dmg
+Ring of Detection,Enhances the wearer's senses., Check what is in next room
+Ring of Resistance,Provides resistance against damage., decrease dmg taken
