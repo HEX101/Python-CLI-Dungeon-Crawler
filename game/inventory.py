@@ -5,10 +5,10 @@ class Item:
         self.name = name
         self.description = description
 
-class Player:           # There is no way this shit works
+class Player:
     _instance = None
 
-    def __new__(cls, *args, **kwargs):          # im fairly certian part of this does nothing but im to scared to touch it
+    def __new__(cls):
         if not cls._instance:
             cls._instance = super().__new__(cls)
         return cls._instance
@@ -19,15 +19,13 @@ class Player:           # There is no way this shit works
             self.inventory = []
             self.gold = 100                             # debug shit for real game prob set to like 15 or smth.
             self.gear = {
-                'ring': None,                           # add starting gear here and remove them from the CSVs
+                'ring': None,
                 'armor': None,
                 'sword': None
             }
-            ring = Item("Debug Ring", "ring")
-            armor = Item("Debug Armor", "armor")
-            sword = Item("Debug Sword", "sword")
+            armor = Item("Quilted Armor", "armor")
+            sword = Item("Iron Shortsword", "sword")
 
-            self.add_item(ring)
             self.add_item(armor)
             self.add_item(sword)
 

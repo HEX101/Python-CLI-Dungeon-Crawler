@@ -1,14 +1,15 @@
-name,description,damage
-Voidseeker,"A mystical sword that is said can harness the power of the void.",12
-Excalibur,"The legendary sword of King Arthur, said to possess magical powers.",13
-Adamantine Sword,"A strong and durable sword forged from the rare and precious metal called adamantine.",11
-Stormsteel Sword,"A blade crafted with steel infused with the power of storms.",10
-Starsteel Sword,"A celestial weapon forged from stardust.",9
-Abyssal Axe,"A fearsome axe imbued with the dark energy of the abyss.",8
-Blightbane,"A sword specifically crafted to combat and vanquish dark and corrupted entities.",7
-Muramasa,"A renowned Japanese sword known for its exceptional sharpness and craftsmanship.",6
-Mithril Broadsword,"A lightweight yet incredibly strong broadsword made from the mythical metal known as mithril.",5
-Darksteel Cleaver,"A razor-sharp cleaver made from darksteel, able to slice through materials with ease.",4
-Platinum Axe,"A finely-crafted axe made from platinum, renowned for its strength and beauty.",3
-Bronze Broadsword,"A classic and reliable broadsword forged from durable bronze.",1
-Copper Cutlass,"A nimble and versatile cutlass made from sturdy copper, favored by agile swordsmen.",1
+name,damage,crit-chance,cost,room-unlock
+Voidseeker,90,15,2500,100
+Excalibur,85,10,1600,90
+Adamantine Sword,77,10,1300,80
+Stormsteel Sword,65,18,1100,70
+Starsteel Sword,73,7,950,60
+Abyssal Axe,65,10,800,50
+Blightbane,60,10,650,40
+Muramasa,55,9,525,35
+Mithril Broadsword,50,6,400,30
+Darksteel Short Sword,45,6,325,25
+Platinum Axe,40,4,250,20
+Bronze Broadsword,35,4,175,15
+Copper Cutlass,30,2,100,10
+Iron Shortsword,20,2,0,0

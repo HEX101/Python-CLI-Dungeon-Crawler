@@ -17,8 +17,9 @@ def camp_menu():
     ]
     while True:
         selected_function = create_menu(menu_title, menu_options)
-        selected_function()
-            
+        if selected_function() == "exit_to_main_menu":
+            break
+
 def gear_menu():
 
     menu_title = "\n--- Gear Menu ---"
@@ -36,4 +37,4 @@ def gear_menu():
 
 def save_and_exit():
     # save_game_state()                     # Placeholder function
-    return False
+    return "exit_to_main_menu"

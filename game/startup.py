@@ -60,8 +60,5 @@ def startup():
 
     print_text_with_typing_effect(story_text, typing_speed)
 
-    time.sleep(1)
-    show_cursor()
-    camp_menu()
     show_cursor()
     camp_menu()

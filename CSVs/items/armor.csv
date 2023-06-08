@@ -1,24 +1,13 @@
-Armor Type,Strength,Description,Price
-Mithril Scale Mail,Light,"Crafted from the rare and lightweight mithril metal, providing a combination of mobility and defense.", not the best stats for a endgame armor but good cause light
-Adamantine Plate,Heavy,"Forged from the legendary and near-indestructible adamantine metal, offers unparalleled strength and unyielding protection, making it the epitome of heavy armor", u dont die in this shit
-Half Cobalt Plate,Medium,"A sturdy and versatile medium armor, combines the resilience of cobalt alloy with strategic coverage, striking a balance between protection and maneuverability", u can die in this shit but its like still movement
-
-^ 3 endagame armors (combine for god armor???)
-
-
-
-Darksteel Chainmail Armor,Medium,"A flexible armor made of interlinked darksteel rings, offering decent protection while allowing for somewhat freedom of movement."
-Plate Armor,Medium,"Armor made of leather with metal plates riveted onto it, offering solid protection and flexibility."
-Studded Leather Armor,Light,"Leather armor reinforced with metal studs, providing improved defense without sacrificing agility.", slight upgrade from Leather
-Leather Armor,Light,"Armor made of hardened leather, offering not much protection but allowing ease of movement.", first armor you can buy
-Quilted Armor,Light,"Armor consisting of layers of fabric stitched together, offering little protection but flexibility.", shit (prob given at start)
-
-special armor
-Elven Armor,Light,"Armor crafted by skilled elven artisans, known for its lightweight design, enhanced agility, and magical properties.", allows for use of 2 rings (bad stats tho)
-Starsteel Plate Mail,Heavy,"A formidable heavy armor forged from the ethereal essence of stardust, grants extremly high defense and an otherworldly aura, imbued with the power of the cosmos.", Chance at taking 0 dmg
-Stormsteel Plate Mail,Heavy,"Crafted from the rare stormsteel a metal that harnesses the power of storms electrifying your attacks, providing exceptional with and a menacing presence on the battlefield", chance at dealing 2x dmg
-
-
-Heavy armor = can carry less items?
-armor bonuses?
-Resistances?
+Armor Type,Strength,AC,Dodge,room-unlock,cost
+Titan Armor,Medium,60,40,100,3000
+Elven Armor,Light,30,10,90,2500
+Mithril Scale Mail,Light,40,40,80,1500
+Adamantine Plate,Heavy,60,10,80,1500
+Half Cobalt Plate,Medium,50,30,80,1500
+Darksteel Chainmail Armor,Heavy,50,5,70,1000
+Starsteel Plate Mail,Light,30,20,65,750
+Stormsteel Plate Mail,Heavy,35,10,60,675
+Hell Plate Armor,Medium,25,7,40,500
+Studded Leather Armor,Light,8,15,20,350
+Leather Armor,Light,2,15,10,200
+Quilted Armor,Light,1,10,0,0
