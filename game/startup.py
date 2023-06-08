@@ -44,51 +44,24 @@ def new_game(difficulty):
     hide_cursor()
     startup()
 
+
+def print_text_with_typing_effect(text, typing_speed):
+    for char in text:
+        print(char, end='', flush=True)
+        time.sleep(typing_speed)
+    print("\n")
+    time.sleep(1)
+
 def startup():
-    typingSpeed = 0.05
+    typing_speed = 0.05
 
-    intro_text = "In a land shrouded in mystery and danger,\n" \
-                "a group of brave adventurers has gathered,\n" \
-                "ready to embark on a perilous quest."          # Bullshit exposition that likely will go nowhere and probably should be moved into a TXT
-    for char in intro_text:
-        print(char, end='', flush=True)
-        time.sleep(typingSpeed)
+    with open('other_files/story.txt', 'r') as file:
+        story_text = file.read()
+
+    print_text_with_typing_effect(story_text, typing_speed)
 
     time.sleep(1)
-    print("\n")
-
-    story_text = "Long ago, an ancient curse befell the realm,\n" \
-                "plunging it into eternal darkness.\n" \
-                "Legends speak of a powerful artifact hidden deep within\n" \
-                "the treacherous depths of an ancient dungeon."
-
-    for char in story_text:
-        print(char, end='', flush=True)
-        time.sleep(typingSpeed)
-
-    time.sleep(1)
-    print("\n")
-
-    story_continued = "You and your fellow explorers have dedicated your lives\n" \
-                    "to seeking out this artifact and lifting the curse.\n" \
-                    "Armed with your wits, skills, and a burning determination,\n" \
-                    "you now stand at the entrance of the fabled dungeon,\n" \
-                    "ready to face the unknown."
-
-    for char in story_continued:
-        print(char, end='', flush=True)
-        time.sleep(typingSpeed)
-
-    time.sleep(1)
-    print("\n")
-
-    game_start_text = "Prepare to delve into the depths of the dungeon,\n" \
-                    "where unimaginable dangers and untold treasures await!\n" \
-                    "May fortune favor the bold!\n"
-    for char in game_start_text:
-        print(char, end='', flush=True)
-        time.sleep(typingSpeed)
-
-    time.sleep(1)
+    show_cursor()
+    camp_menu()
     show_cursor()
     camp_menu()
