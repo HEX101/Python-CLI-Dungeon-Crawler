@@ -1,6 +1,6 @@
 from game.shop import shop
 from game.dungeon import enter_dungeon
-from game.helpers import create_menu
+from game.helpers import create_menu, BreakOutException
 from game.inventory import player, Player
 
 def camp_menu():
@@ -13,12 +13,17 @@ def camp_menu():
         ("Gear", gear_menu),
         ("Inventory", Player().display_inventory),
         ("Shop", shop),
-        ("Save and Exit to Main Menu", save_and_exit)
+        ("Save and Exit to Main Menu", None)
     ]
     while True:
         selected_function = create_menu(menu_title, menu_options)
-        if selected_function() == "exit_to_main_menu":
-            break
+        if selected_function:
+            selected_function()
+
+        elif selected_function == None:
+            # Saving logic
+
+            raise BreakOutException()               # kinda a hack I think but I couldnt find a better way of doing it
 
 def gear_menu():
 
@@ -34,7 +39,3 @@ def gear_menu():
         if selected_function == menu_options[-1][1]:
             break
         selected_function()
-
-def save_and_exit():
-    # save_game_state()                     # Placeholder function
-    return "exit_to_main_menu"

@@ -12,7 +12,7 @@ def shop():
         ("Healing Potions", lambda: buy_healing_potions(player)),
         ("Swords", lambda: buy_gear("swords", SWORDS_CSV)),
         ("Armor", lambda: buy_gear("armor", ARMOR_CSV)),
-        ("Exit", lambda: None),
+        ("Exit", None),
         ]
     while True:
         selected_function = create_menu(menu_title, menu_options)

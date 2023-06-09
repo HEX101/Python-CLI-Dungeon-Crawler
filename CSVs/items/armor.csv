@@ -1,4 +1,4 @@
-Armor Type,Strength,AC,Dodge,room-unlock,cost
+name,Strength,AC,Dodge,room-unlock,cost
 Titan Armor,Medium,60,40,100,3000
 Elven Armor,Light,30,10,90,2500
 Mithril Scale Mail,Light,40,40,80,1500

@@ -2,6 +2,9 @@ import csv
 import random
 import sys
 
+class BreakOutException(Exception):         # j use break 2 4head. Should have learnt PHP fr.
+    pass
+
 def choose_random_item():
     with open('CSVs/rareItems.csv', 'r') as file:
         reader = csv.DictReader(file)

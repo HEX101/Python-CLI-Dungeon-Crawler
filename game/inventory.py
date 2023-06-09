@@ -18,6 +18,8 @@ class Player:
             self.initialized = True
             self.inventory = []
             self.gold = 100                             # debug shit for real game prob set to like 15 or smth.
+            self.HP = 100
+            self.max_HP = 100
             self.gear = {
                 'ring': None,
                 'armor': None,

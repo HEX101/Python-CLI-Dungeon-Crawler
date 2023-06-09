@@ -1,6 +1,6 @@
 import time
 from game.camp import camp_menu
-from game.helpers import create_menu, quit_game, hide_cursor, show_cursor
+from game.helpers import create_menu, quit_game, hide_cursor, show_cursor, BreakOutException
 
 def main_menu():
     print("Welcome to Dungeon Explorers!")
@@ -24,18 +24,22 @@ def load_save_file():
     print("TODO")
 
 def new_game_menu():
-    menu_title = "\n--- New Game - Difficulty Selection ---"
-    menu_options = [
-    ("Adventurer - The easiest difficulty", lambda: new_game("Adventurer")),
-    ("Heroic - Enemies have more HP and hit harder", lambda: new_game("Heroic")),
-    ("Nightmare - Enemies have even more HP and hit even harder", lambda: new_game("Nightmare")),
-    ]
-    while True:
-        selected_function = create_menu(menu_title, menu_options)
-        if selected_function:
-            selected_function()
-        else:
-            break
+    try:
+        menu_title = "\n--- New Game - Difficulty Selection ---"
+        menu_options = [
+        ("Adventurer - The easiest difficulty", lambda: new_game("Adventurer")),
+        ("Heroic - Enemies have more HP and hit harder", lambda: new_game("Heroic")),
+        ("Nightmare - Enemies have even more HP and hit even harder", lambda: new_game("Nightmare")),
+        ]
+        while True:
+            selected_function = create_menu(menu_title, menu_options)
+            if selected_function:
+                selected_function()
+            else:
+                break
+    except BreakOutException:                       # if there is a better way of doing this please lmk. It works but it feels like cheating.
+        return
+
 
 def new_game(difficulty):
     save_name = input("\nWhat is your name adventurer: ")                     # To be used for the save file name
@@ -53,9 +57,9 @@ def print_text_with_typing_effect(text, typing_speed):
     time.sleep(1)
 
 def startup():
-    typing_speed = 0.05
+    typing_speed = 0.005
 
-    with open('other_files/story.txt', 'r') as file:
+    with open('Python-CLI-Dungeon-Crawler/other_files/story.txt', 'r') as file:
         story_text = file.read()
 
     print_text_with_typing_effect(story_text, typing_speed)
